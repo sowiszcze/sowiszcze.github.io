@@ -1,0 +1,31 @@
+title: Piotr Sowa
+author: Sowiszcze
+email: contact@sowiszcze.it
+description: Web and .NET developer, IT enthusiast
+tagline: Piotr Sowa | Sowiszcze's portfolio | Sowiszcze's CV
+baseurl: ""
+#url: ""
+#logo: /assets/logo.png
+#facebook:
+#  app_id: 
+#  publisher:
+twitter:
+  username: Sowiszcze
+  card: summary
+github:
+  username: sowiszcze
+social:
+  name: Sowiszcze
+  links:
+    - https://github.com/sowiszcze
+    - https://instagram.com/piotr.sowa/
+    - https://linkedin.com/in/piotr-sowa-8950b2a4/
+    - https://twitter.com/Sowiszcze
+
+theme: minima
+plugins:
+  - jekyll-avatar
+  - jekyll-relative-links
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+  - jekyll-sitemap
