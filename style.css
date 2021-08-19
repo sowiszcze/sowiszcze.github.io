@@ -1,0 +1,106 @@
+:root {
+    --accent-color: #ca763c;
+    --text-color: #eee;
+    --shadow-color: black;
+    --background-brightness: 0.75;
+
+    color: var(--text-color);
+    font-family: 'Georama', sans-serif;
+}
+
+html, body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(var(--background-brightness));
+}
+
+#content, footer {
+    z-index: 2;
+}
+
+#content {
+    position: relative;
+    text-shadow: 0 0 4px var(--shadow-color), 0 0 4px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+h2, h3 {
+    font-weight: normal;
+}
+
+h1 em, h2 em, h3 em {
+    font-style: normal;
+    color: var(--accent-color);
+}
+
+h2 em {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 3.1rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+address {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+address a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+}
+
+li {
+    margin: 0 1ex;
+    text-align: center;
+    width: 20%;
+}
+
+footer {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    width: 100vw;
+    font-size: .75rem;
+}
